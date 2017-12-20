@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525" WindowStyle="None">
     <Grid>
-        
+        <StackPanel x:Name="topMenuFrame" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="517"/>
+        <TabControl x:Name="menuControl" HorizontalAlignment="Left" Height="280" Margin="0,37,0,0" VerticalAlignment="Top" Width="517">
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+        <StackPanel x:Name="footerFrame" HorizontalAlignment="Left" Height="25" Margin="0,317,0,0" VerticalAlignment="Top" Width="517"/>
+
     </Grid>
 </Window>
