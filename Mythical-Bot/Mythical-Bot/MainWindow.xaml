@@ -7,16 +7,38 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525" WindowStyle="None">
     <Grid>
-        <StackPanel x:Name="topMenuFrame" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="517"/>
+        <StackPanel x:Name="topMenuFrame" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="517">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF438740" Offset="0.183"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label Content="Mythical Bot Control Panel" Foreground="#FF89FF13" FontSize="18"/>
+        </StackPanel>
         <TabControl x:Name="menuControl" HorizontalAlignment="Left" Height="280" Margin="0,37,0,0" VerticalAlignment="Top" Width="517">
             <TabItem Header="TabItem">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
             <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid>
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="White" Offset="0"/>
+                            <GradientStop Color="White" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                </Grid>
             </TabItem>
         </TabControl>
-        <StackPanel x:Name="footerFrame" HorizontalAlignment="Left" Height="25" Margin="0,317,0,0" VerticalAlignment="Top" Width="517"/>
+        <StackPanel x:Name="footerFrame" HorizontalAlignment="Left" Height="25" Margin="0,317,0,0" VerticalAlignment="Top" Width="517">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF438740" Offset="0.847"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+        </StackPanel>
 
     </Grid>
 </Window>
